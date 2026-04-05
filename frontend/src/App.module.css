@@ -1,0 +1,291 @@
+.root {
+  min-height: 100vh;
+  padding: 1rem 1.5rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.logo {
+  color: var(--accent);
+  margin-right: 0.25rem;
+}
+
+.nav {
+  display: flex;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.navBtn,
+.navOn {
+  background: var(--card);
+  border: 1px solid #2d2d44;
+  color: var(--text);
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+}
+
+.navOn {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.select {
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid #2d2d44;
+  padding: 0.45rem 0.75rem;
+  border-radius: 6px;
+  min-width: 220px;
+  font: inherit;
+}
+
+.badge {
+  margin-left: 0.35rem;
+  background: var(--danger);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0 0.45rem;
+  font-size: 12px;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.summary > div {
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #2d2d44;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.kpi {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 0.35rem;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 900px) {
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+  .summary {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid #2d2d44;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cardHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.liveDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.45;
+  }
+}
+
+.bigNum {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.sub {
+  font-size: 18px;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.feed {
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.feedRow {
+  display: grid;
+  grid-template-columns: 100px 1fr 180px;
+  gap: 0.5rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid #2d2d44;
+  font-size: 13px;
+}
+
+.tag {
+  text-transform: uppercase;
+  font-size: 11px;
+  color: var(--accent);
+}
+
+.simRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.simRow button {
+  background: #252540;
+  color: var(--text);
+  border: 1px solid #3d3d5c;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+}
+
+.simRow button:hover {
+  border-color: var(--accent);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 0.5rem 0.35rem;
+  border-bottom: 1px solid #2d2d44;
+}
+
+.heatWrap {
+  display: flex;
+  gap: 0.35rem;
+  overflow-x: auto;
+}
+
+.heatLabels {
+  display: flex;
+  flex-direction: column;
+  padding-top: 18px;
+}
+
+.heatRowLabel {
+  height: 14px;
+  font-size: 10px;
+  color: var(--muted);
+  line-height: 14px;
+  margin-bottom: 2px;
+}
+
+.heatHours {
+  display: grid;
+  grid-template-columns: repeat(24, 14px);
+  gap: 2px;
+  font-size: 9px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.heatRow {
+  display: grid;
+  grid-template-columns: repeat(24, 14px);
+  gap: 2px;
+  margin-bottom: 2px;
+}
+
+.heatCell {
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+}
+
+.skeletonPage {
+  padding: 3rem;
+  text-align: center;
+  color: var(--muted);
+}
+
+.errorBanner {
+  padding: 2rem;
+  color: var(--danger);
+}
+
+.panelHint {
+  padding: 1rem 0;
+  color: var(--muted);
+}
+
+.errorPanel {
+  background: #2a1520;
+  border: 1px solid var(--danger);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.errorPanel button {
+  margin-top: 0.75rem;
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid #3d3d5c;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+}
+
+.chartBox {
+  min-height: 280px;
+  height: 280px;
+}
+
+.chartBoxTall {
+  min-height: 300px;
+  height: 300px;
+}
