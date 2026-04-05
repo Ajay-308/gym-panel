@@ -2,6 +2,14 @@
 
 Real-time multi-gym operations dashboard: React + Node.js (Express + WebSocket) + PostgreSQL 15, orchestrated with Docker Compose.
 
+<img width="2205" height="1314" alt="image" src="https://github.com/user-attachments/assets/d3a25766-0058-4f4a-94de-2c98df6d73e9" />
+<img width="2417" height="1197" alt="image" src="https://github.com/user-attachments/assets/80b3237c-2d1d-4ee6-8059-a4fe2377545e" />
+<img width="2150" height="1040" alt="image" src="https://github.com/user-attachments/assets/cc788d3a-ba15-42e9-8116-17528dc964e6" />
+<img width="2280" height="587" alt="image" src="https://github.com/user-attachments/assets/b48ef689-c63a-4512-aec4-abe39ee47cd0" />
+
+
+
+
 ## 1. Quick start
 
 **Prerequisites:** [Docker Desktop](https://www.docker.com/products/docker-desktop/) (or Docker Engine + Compose v2).
